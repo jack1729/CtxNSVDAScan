@@ -15,7 +15,7 @@ def CtxUp( CtxHost ):
   else:
         print "Port is closed"
   sock.close()
-return
+  return
 
 for intThrOctet in range(1,255):
   CtxUp('10.14.10.'+intThrOctet)
