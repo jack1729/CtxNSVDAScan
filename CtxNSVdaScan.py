@@ -13,7 +13,7 @@ def CtxUp( CtxHost ):
         print "Port is open"
   else:
         print "Port is closed"
-  sock.close()
+  s.close()
   return
 
 for intThrOctet in range(1,255):
