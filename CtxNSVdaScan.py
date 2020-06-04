@@ -9,7 +9,8 @@ def CtxUp( CtxHost ):
   except socket.error as err: 
     print "socket creation failed with error %s" %(err) 
     
-  result = sock.connect_ex(('10.14.10.216',1494))
+  s.settimeout(10)  
+  result = s.connect_ex((CTxHost,1494))
   if result == 0:
         print "Port is open"
   else:
@@ -18,5 +19,5 @@ def CtxUp( CtxHost ):
   return
 
 for intThrOctet in range(1,255):
-  CtxUp('10.14.10.'+intThrOctet)
+  CtxUp('10.14.10.'+str(intThrOctet))
   
