@@ -1,12 +1,10 @@
 import socket
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
 def CtxUp( CtxHost ):
   try: 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
     print "Socket successfully created"
-  except socket.error as err: 
+  except s.error as err: 
     print "socket creation failed with error %s" %(err) 
     
   s.settimeout(10)  
