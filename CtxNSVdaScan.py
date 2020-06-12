@@ -19,5 +19,5 @@ def CtxUp( CtxHost ):
   return
 
 for intThrOctet in range(1,255):
-  CtxUp('10.14.10.'+str(intThrOctet))
-  
+  CtxUp('10.0.0.'+str(intThrOctet))
+  CtxUp('10.1.0.'+str(intThrOctet))
