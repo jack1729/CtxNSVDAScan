@@ -10,7 +10,7 @@ def CtxUp( CtxHost ):
     print "socket creation failed with error %s" %(err) 
     
   s.settimeout(10)  
-  result = s.connect_ex((CTxHost,1494))
+  result = s.connect_ex((CTxHost,2598))
   if result == 0:
         print "Port is open on CTxHost"
   else:
